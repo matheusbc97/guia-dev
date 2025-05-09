@@ -1,7 +1,7 @@
 # Arquitetura no react native
 
 ## Framework 
-**`Expo`**: Pois facilita muito o processo de desenvolvimento pois já tráz diversos componentes e funcionaldiades prontas pra uso
+**`Expo`**: Pois facilita muito o processo de desenvolvimento já que tráz diversos componentes e funcionaldiades prontas pra uso
 
 **`Expo prebuild:`** Caso precise de uma biblioteca nativa no projeto expo, utilizar o prebuild para poder continuar usando as bibliotecas do expo e as nativas.
 
@@ -27,6 +27,36 @@
 ### Formatação de datas
 - `date-fns`: Para formatar datas
 
-## Bibliotecas não utilizadas (Mas que são importante saber)
+### SVGs
+- `react-native-svg` para exibir svgs
+
+### Notificações
+- `@react-native-firebase/messaging` para o envio de notificações
+
+### Persistência de dados
+- `react-native-mmkv` para salvar dados simples no app
+- `@nozbe/watermelondb` para salvar dados mais complexos (recomendado quando o app tiver que ser utilizado offline)
+
+### Formatação/estilização/qualidade de código
+- `eslint`: ferramenta que analisa o código JavaScript/TypeScript e aponta erros, más práticas e inconsistências com base em regras definidas.
+- `prettier`: O Prettier é um formatador de código. Ele ajusta seu código para que siga um estilo visual consistente, independente de quem escreveu.
+  
+### Padronização de comits
+- `comitlint`: O Commitlint é uma ferramenta que valida as mensagens de commit, garantindo que elas sigam um padrão específico
+- `husky`: O Husky é uma ferramenta que permite adicionar ganchos (hooks) no Git, ou seja, ações automáticas que rodam antes ou depois de certos comandos Git, como commit, push, etc.
+
+### Splash screen
+- `expo-splash-screen`: para controlar a exibição/ocultação da splash screen
+
+### Biometria
+- `expo-local-authentication`: para usar a biometria
+
+### Criptografia
+- `expo-secure-store`: para salvar dados criptografados
+
+### Bibliotecas normalmente não utilizadas (Mas que são importante saber)
 - `Context api`: Biblioteca nativa do react para gerenciar estado
-- `Suspense`:
+- `Suspense`: Carregamento assíncrono de componentes
+
+### Manipulando arquivos
+- `expo-file-system` quando se é necessário manipular arquivos 
