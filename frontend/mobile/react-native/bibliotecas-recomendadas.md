@@ -1,7 +1,7 @@
 # Bibliotecas Recomendadas
 
 ## Navegação
-- `@react-navigation`: Para a navegação do app
+- `expo-router`: Para a navegação do app
 
 ## Gerenciamento de formulários
 - `react-hook-form`: Para gerenciar com formulários
