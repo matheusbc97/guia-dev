@@ -2,15 +2,11 @@
 
 Este documento define a convenção de estruturação dos módulos dentro da aplicação NestJS, visando organização, manutenibilidade e prevenção de ciclos de importação.
 
----
-
 ## 📐 Princípios Gerais
 
 - Cada **módulo deve representar um contexto único** do domínio da aplicação.
 - Um **módulo deve conter somente uma entidade principal** (ex: `User`, `Project`, `Task`).
 - A comunicação entre módulos deve ser feita apenas por meio de **interfaces públicas** (services exportados), evitando referências cruzadas diretas a entidades.
-
----
 
 ## 🧱 Estrutura Recomendada
 
@@ -18,23 +14,47 @@ Este documento define a convenção de estruturação dos módulos dentro da apl
 src/
 ├── user/
 │   ├── user.module.ts
-│   ├── user.controller.ts
-│   ├── user.service.ts
-│   ├── user.entity.ts
+│   ├── controllers/
+│   │   └── user.controller.ts
+│   ├── services/
+│   │   └── user.service.ts
+│   ├── entities/
+│   │   └── user.entity.ts
+│   ├── repositories/
+│   │   └── user.repository.ts
 │   ├── dto/
-│   ├── interfaces/
-│   └── user.repository.ts
+│   │   └── create-user.dto.ts
+│   ├── presenters/
+│   │   └── user.presenter.ts
+│   ├── exceptions/
+│   │   └── user-not-found.exception.ts
+│   ├── models/
+│   │   └── user.model.ts
+│   └── enums/
+│       └── user-role.enum.ts
 ├── task/
 │   ├── task.module.ts
-│   ├── task.controller.ts
-│   ├── task.service.ts
-│   ├── task.entity.ts
-│   └── ...
+│   ├── controllers/
+│   │   └── task.controller.ts
+│   ├── services/
+│   │   └── task.service.ts
+│   ├── entities/
+│   │   └── task.entity.ts
+│   ├── repositories/
+│   │   └── task.repository.ts
+│   ├── dto/
+│   │   └── create-task.dto.ts
+│   ├── presenters/
+│   │   └── task.presenter.ts
+│   ├── exceptions/
+│   │   └── task-not-found.exception.ts
+│   ├── models/
+│   │   └── task.model.ts
+│   └── enums/
+│       └── task-status.enum.ts
 ```
 
 > 📌 **Nota:** Cada módulo deve conter todos os arquivos relacionados à sua entidade, como controller, service, repository, DTOs, interfaces e testes.
-
----
 
 ## 🧩 Vantagens
 
@@ -42,8 +62,6 @@ src/
 - ✅ Facilita a reutilização e teste de serviços e regras de negócio.
 - ✅ Melhora a legibilidade e o entendimento da estrutura do projeto.
 - ✅ Permite organização clara e modular do domínio da aplicação.
-
----
 
 ## 🔁 Comunicação entre Módulos
 
