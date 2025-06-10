@@ -90,6 +90,7 @@ A camada de serviço é responsável por centralizar a **lógica de negócio** d
 ### Regras de Boas Práticas
 
 - Não acessar diretamente o banco de dados (sempre via repositórios).
+- Evitar lógica de apresentação (responsabilidade do controller).
 - Não duplicar lógica já existente em outros serviços.
 
 ### Exemplo
