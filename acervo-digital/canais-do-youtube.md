@@ -30,7 +30,7 @@
 - Voltado a desenvolvimento web, boas práticas e empoderamento técnico para iniciantes e intermediários.
 
 ### [Fabio Akita](https://www.youtube.com/@Akitando)
-- Especialista em Ruby on Rails, NestJS, padrões de projeto, arquitetura de sistemas e boas práticas.
+- Canal sobre a carreira de programador em geral, com vários vídeos longos de temas diversos, como git, docker, Linux, ia, carreira, faculdade, criptografia, linha do tempo de todas as linguagens de programação, rede e etc.
 
 ---
 
