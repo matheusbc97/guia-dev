@@ -7,19 +7,20 @@ Markdown é uma linguagem de marcação simples que permite formatar texto de fo
 
 ## 📌 Tópicos
 
-- [O que é Markdown?](#o-que-e-markdown)
-- [Formatação](#formatacao)
-  - [Títulos](#titulos)
-  - [Textos](#textos)
-- [Listas](#listas)
-- [Links](#links)
-- [Imagens](#imagens)
-- [Códigos](#codigos)
-- [Citações](#citacoes)
-- [Tabelas](#tabelas)
-- [Linhas Horizontais](#linhas-horizontais)
-- [Checklists](#checklists)
-- [Conclusão](#conclusao)
+- [O que é Markdown?](#📝-o-que-e-markdown)
+- Formatação
+  - [Títulos](#️⃣-títulos)
+  - [Textos](#️⃣-textos)
+- [Listas](#📋-listas)
+- [Links](#🔗-links)
+- [Imagens](#🖼️-imagens)
+- [Códigos](#💻-códigos)
+- [Citações](#💬-citações)
+- [Tabelas](#📊-tabelas)
+- [Linhas Horizontais](#➖-linhas-horizontais)
+- [Checklists](#✅-checklists)
+- [Conclusão](#🎯-conclusão)
+- [Referências](#📖-referências)
 
 ---
 
