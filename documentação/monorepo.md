@@ -4,12 +4,14 @@
 
 - [📖 Introdução](#introdução)
 - [🗂 Estrutura Básica](#estrutura-básica)
+- [📊 Tipos e Estratégias de Monorepo](#tipos-e-estratégias-de-monorepo)
 - [⚙️ Ferramentas Populares](#ferramentas-populares)
 - [✅ Vantagens](#vantagens)
 - [⚠️ Desvantagens](#desvantagens)
 - [🔄 Fluxo de Trabalho Típico](#fluxo-de-trabalho-típico)
 - [📌 Boas Práticas](#boas-práticas)
 - [🔗 Comparação com Multirepo](#comparação-com-multirepo)
+- [📚 Referências](#referências)
 
 ---
 
@@ -44,14 +46,28 @@ O importante é manter a separação clara entre o que é aplicação e o que é
 
 ---
 
+## Tipos e Estratégias de Monorepo
+
+Existem diferentes formas de organizar e gerenciar um monorepo, especialmente no mundo JavaScript/TypeScript:
+
+Yarn Workspaces – Permite que múltiplos pacotes compartilhem dependências instaladas em um único lugar, reduzindo duplicações e facilitando a resolução de versões.
+
+PNPM Workspaces – Similar ao Yarn Workspaces, mas com links simbólicos inteligentes, tornando builds e instalações mais rápidas e eficientes.
+
+npm Workspaces – A solução nativa do npm para gerenciar múltiplos pacotes em um único repositório.
+
+Lerna com Workspaces – Combina o versionamento e publicação automática do Lerna com Workspaces para dependências compartilhadas.
+
+Cada estratégia tem suas vantagens e limitações, mas todas ajudam a manter dependências centralizadas, acelerar builds e simplificar o desenvolvimento dentro do monorepo.
+
 ## Ferramentas Populares
 
-Para gerenciar builds, dependências e publicação de forma eficiente, algumas ferramentas se destacam:
+Se você quiser explorar ferramentas que auxiliam no gerenciamento de monorepos, consulte:
 
-- **Nx** – Focado em apps modernas, com suporte a caching inteligente.
-- **Turborepo** – Rápido, ideal para projetos JavaScript/TypeScript.
-- **Lerna** – Automação de pacotes e publicação.
-- **Bazel** – Usado por empresas grandes como Google.
+- **Nx** ([nx.dev](https://nx.dev)) – Uma plataforma completa para organizar, construir e testar projetos dentro de um monorepo, com suporte a caching inteligente e execução paralela de tarefas.
+- **Turborepo** ([turbo.build/repo](https://turbo.build/repo)) – Focado em performance, ideal para projetos JavaScript/TypeScript; ajuda a executar builds e testes rapidamente reaproveitando resultados anteriores.
+- **Lerna** ([lerna.js.org](https://lerna.js.org/)) – Facilita a gestão de múltiplos pacotes dentro de um mesmo repositório, cuidando de versionamento, dependências internas e publicação.
+- **Bazel** ([bazel.build](https://bazel.build)) – Ferramenta de build poderosa, usada em grandes empresas como Google, capaz de gerenciar projetos enormes e heterogêneos com alta eficiência.
 
 ---
 
@@ -99,3 +115,9 @@ Para gerenciar builds, dependências e publicação de forma eficiente, algumas 
 | Fácil compartilhamento de código | Compartilhamento exige publicação de pacotes |
 | Histórico centralizado           | Históricos separados                         |
 | Build/teste integrados           | Build/teste independentes                    |
+
+## Referências
+
+- [Monorepo.tools](https://monorepo.tools) – Guia abrangente sobre monorepos, vantagens, desvantagens e ferramentas.
+- [Google Research – Why Google Stores Billions of Lines of Code in a Single Repository](https://research.google/pubs/pub45424/) – Estudo sobre a abordagem do Google.
+- [Trunk-based Development – Monorepos](https://trunkbaseddevelopment.com/monorepos/) – Monorepos no contexto de integração contínua.
