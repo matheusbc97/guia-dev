@@ -5,12 +5,12 @@
 - [📖 Introdução](#introdução)
 - [🗂 Estrutura Básica](#estrutura-básica)
 - [📊 Tipos e Estratégias de Monorepo](#tipos-e-estratégias-de-monorepo)
-- [⚙️ Ferramentas Populares](#ferramentas-populares)
 - [✅ Vantagens](#vantagens)
 - [⚠️ Desvantagens](#desvantagens)
 - [🔄 Fluxo de Trabalho Típico](#fluxo-de-trabalho-típico)
 - [📌 Boas Práticas](#boas-práticas)
 - [🔗 Comparação com Multirepo](#comparação-com-multirepo)
+- [⚙️ Ferramentas Populares](#ferramentas-populares)
 - [📚 Referências](#referências)
 
 ---
@@ -60,15 +60,6 @@ Lerna com Workspaces – Combina o versionamento e publicação automática do L
 
 Cada estratégia tem suas vantagens e limitações, mas todas ajudam a manter dependências centralizadas, acelerar builds e simplificar o desenvolvimento dentro do monorepo.
 
-## Ferramentas Populares
-
-Se você quiser explorar ferramentas que auxiliam no gerenciamento de monorepos, consulte:
-
-- **Nx** ([nx.dev](https://nx.dev)) – Uma plataforma completa para organizar, construir e testar projetos dentro de um monorepo, com suporte a caching inteligente e execução paralela de tarefas.
-- **Turborepo** ([turbo.build/repo](https://turbo.build/repo)) – Focado em performance, ideal para projetos JavaScript/TypeScript; ajuda a executar builds e testes rapidamente reaproveitando resultados anteriores.
-- **Lerna** ([lerna.js.org](https://lerna.js.org/)) – Facilita a gestão de múltiplos pacotes dentro de um mesmo repositório, cuidando de versionamento, dependências internas e publicação.
-- **Bazel** ([bazel.build](https://bazel.build)) – Ferramenta de build poderosa, usada em grandes empresas como Google, capaz de gerenciar projetos enormes e heterogêneos com alta eficiência.
-
 ---
 
 ## Vantagens
@@ -115,6 +106,15 @@ Se você quiser explorar ferramentas que auxiliam no gerenciamento de monorepos,
 | Fácil compartilhamento de código | Compartilhamento exige publicação de pacotes |
 | Histórico centralizado           | Históricos separados                         |
 | Build/teste integrados           | Build/teste independentes                    |
+
+## Ferramentas Populares
+
+Existem algumas ferramentas que facilitam o gerenciamento de monorepos. Elas ajudam a organizar múltiplos projetos e bibliotecas dentro de um único repositório, permitindo compartilhar dependências de forma eficiente e padronizar configurações de build e teste. Além disso, essas ferramentas podem acelerar processos de compilação e integração contínua, garantindo que mudanças em uma parte do código não quebrem outras aplicações ou módulos. Elas também simplificam tarefas como versionamento, publicação de pacotes e execução de scripts em diferentes projetos simultaneamente. A seguir, listamos algumas das mais populares no ecossistema moderno.
+
+- **Nx** ([nx.dev](https://nx.dev)) – Uma plataforma completa para organizar, construir e testar projetos dentro de um monorepo, com suporte a caching inteligente e execução paralela de tarefas.
+- **Turborepo** ([turbo.build/repo](https://turbo.build/repo)) – Focado em performance, ideal para projetos JavaScript/TypeScript; ajuda a executar builds e testes rapidamente reaproveitando resultados anteriores.
+- **Lerna** ([lerna.js.org](https://lerna.js.org/)) – Facilita a gestão de múltiplos pacotes dentro de um mesmo repositório, cuidando de versionamento, dependências internas e publicação.
+- **Bazel** ([bazel.build](https://bazel.build)) – Ferramenta de build poderosa, usada em grandes empresas como Google, capaz de gerenciar projetos enormes e heterogêneos com alta eficiência.
 
 ## Referências
 
