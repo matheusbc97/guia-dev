@@ -1,17 +1,29 @@
-# 📱 Guia Completo: Gerando APK no React Native
+# 📱 Guia Completo: Gerando APK com React Native
 
 ## 📖 Sumário
 
-1. [O que é um APK](#1-o-que-é-um-apk)
-2. [O que é preciso saber antes de gerar um APK](#2-o-que-é-preciso-saber-antes-de-gerar-um-apk)
-3. [Dois caminhos para gerar um APK](#3-dois-caminhos-para-gerar-um-apk)
-   - [3.1 Gerando um APK no React Native CLI](#31-gerando-um-apk-no-react-native-cli)
-   - [3.2 Gerando um APK com Expo](#32-gerando-um-apk-com-expo)
-4. [Cenários no React Native: Expo vs React Native CLI](#4-cenários-no-react-native-expo-vs-react-native-cli)
+- [1. O que é um APK](#1-o-que-é-um-apk)
+- [2. O que é preciso saber antes de gerar um APK](#2-o-que-é-preciso-saber-antes-de-gerar-um-apk)
+- [3. Dois caminhos para gerar um APK](#3-dois-caminhos-para-gerar-um-apk)
+  - [3.1 Gerando um APK no React Native CLI](#31-gerando-um-apk-no-react-native-cli)
+    - [3.1.1 Instalando e configurando o Android Studio](#311-instalando-e-configurando-o-android-studio)
+    - [3.1.2 Configurando variáveis de ambiente (Linux/macOS)](#312-configurando-variáveis-de-ambiente-linuxmacos)
+    - [3.1.3 Acessando a pasta Android do projeto](#313-acessando-a-pasta-android-do-projeto)
+    - [3.1.4 Gerando o APK](#314-gerando-o-apk)
+      - [3.1.4.1 Debug APK](#3141-debug-apk)
+      - [3.1.4.2 Release APK](#3142-release-apk)
+  - [3.2 Gerando um APK com Expo](#32-gerando-um-apk-com-expo)
+    - [3.2.1 Preparando o projeto](#321-preparando-o-projeto)
+    - [3.2.2 Gerando o APK](#322-gerando-o-apk)
+      - [3.2.2.1 APK de teste (development build)](#3221-apk-de-teste-development-build)
+      - [3.2.2.2 APK de produção (release build)](#3222-apk-de-produção-release-build)
+- [4. Cenários no React Native: Expo vs React Native CLI](#4-cenários-no-react-native-expo-vs-react-native-cli)
+
+- [5. Referências](#5-referências)
 
 ---
 
-## 1 O que é um APK
+## 1. O que é um APK
 
 Um APK (Android Package Kit) é o formato de arquivo usado pelo sistema operacional Android para distribuir e instalar aplicativos. Ele contém todos os componentes de um app — código compilado, recursos (imagens, layouts, sons), arquivos de configuração e permissões — necessários para que o aplicativo funcione no dispositivo.
 
@@ -21,7 +33,7 @@ Simplificando, é o "pacote" que o Android precisa para instalar e executar um a
 
 ---
 
-## 2 O que é preciso saber antes de gerar um APK
+## 2. O que é preciso saber antes de gerar um APK
 
 Antes de gerar um APK em React Native, é importante entender alguns cenários para escolher o método certo. Neste guia, o foco é exclusivamente no React Native, mas também daremos um panorama geral do sistema Android. Esse conhecimento ajuda não só a gerar um APK, mas também a lidar com problemas futuros — é melhor entender o que está acontecendo do que depender apenas do Copilot para resolver tudo.
 
@@ -35,7 +47,7 @@ Embora existam diferentes maneiras de gerar um APK usando Java ou Kotlin, neste 
 
 ---
 
-## 3 Dois caminhos para gerar um APK
+## 3. Dois caminhos para gerar um APK
 
 No React Native, existem dois cenários principais para gerar um APK: React Native CLI e Expo.
 
@@ -212,7 +224,7 @@ O EAS Build é um serviço do Expo que compila seu APK nos servidores deles. Iss
 
 ---
 
-## 4 Cenários no React Native: Expo vs React Native CLI
+## 4. Cenários no React Native: Expo vs React Native CLI
 
 Para unificar, podemos resumir os quatro cenários principais:
 
@@ -238,3 +250,12 @@ Para unificar, podemos resumir os quatro cenários principais:
 Em resumo: se seu projeto foi iniciado com Expo Managed, use `eas build`. Se está no Bare Workflow ou no React Native CLI, a geração será feita manualmente via Gradle.
 
 [Voltar ao sumário](#-sumário)
+
+## 5. Referências
+
+Para se aprofundar e conferir as informações oficiais:
+
+- [Documentação oficial do React Native](https://reactnative.dev/docs/getting-started)
+- [Documentação oficial do Expo](https://docs.expo.dev/)
+- [Guia de build do Android](https://developer.android.com/studio/build)
+- [EAS Build do Expo](https://docs.expo.dev/build/introduction/)
