@@ -26,3 +26,7 @@ Segue abaixo exemplo de estrutura de pastas simulando a estrutura de um ecomerce
 &nbsp;&nbsp;- types<br>
 &nbsp;&nbsp;- utils<br>
 </code>
+
+
+Referencias:
+https://medium.com/@marketing_26756/angular-best-practices-tips-for-project-structure-and-organization-490ca7950829
