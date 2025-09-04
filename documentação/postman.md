@@ -59,6 +59,8 @@ Assim, você consegue verificar se a API está funcionando corretamente, analisa
 O Postman não é apenas uma ferramenta de envio de requisições: é um **ecossistema completo** para construir, testar e documentar APIs.  
 Ele reduz o atrito no processo de desenvolvimento e garante mais qualidade nos produtos digitais.
 
+> 💡 Caso queira conhecer uma alternativa, vale a pena explorar o [Insomnia](https://github.com/matheusbc97/guia-dev/blob/main/documenta%C3%A7%C3%A3o/insomnia.md), outra ferramenta bastante usada para testes de API.
+
 ---
 
 ## Referências
